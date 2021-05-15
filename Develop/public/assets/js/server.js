@@ -12,9 +12,6 @@ app.use(express.json());
 
 
 
-
-
-
 app.get('/',(req, res) => {
     res.sendFile(path.join(__dirname, 'index.html'));
 });
@@ -29,15 +26,6 @@ require("/Users/avi/Desktop/github/Week11/02-Homework/Routes/htmlRoute.js")(app)
 
 
 
-
-
-//fs.readFile('/public/notes.html', (err,data) => {
-    //if(err){
-        //console.log(err);
-    //}else{
-        //res.setHeader('Content-Type', 'text/html' )
-    //}
-//})
 
 app.listen(PORT, () => {
     console.log (`Sucessfull!: ${PORT}`);
