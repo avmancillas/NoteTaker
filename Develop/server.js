@@ -13,16 +13,14 @@ app.use(express.json());
 
 
 app.get('/',(req, res) => {
-    res.sendFile(path.join(__dirname, 'index.html'));
+    console.log(`app.get"/":  ${__dirname}`);
+    res.sendFile(path.join(__dirname, 'public','assets','index.html'));
 });
 
 app.get('/notes', (req, res) => {
-    res.sendFile(path.join(__dirname, 'notes.html'));
+    console.log(`app.get"/notes": ${__dirname}`);
+    res.sendFile(path.join(__dirname, 'public', 'assets','notes.html'));
 });
-
-
-require("/Users/avi/Desktop/github/Week11/02-Homework/Routes/apiRoute.js")(app);
-require("/Users/avi/Desktop/github/Week11/02-Homework/Routes/htmlRoute.js")(app);
 
 
 
