@@ -4,5 +4,5 @@ For this weeks homework we had to create an Note Taker app using Express and Nod
 
 ![Screenshot](Assets/Screenshot1.png)
 [hosted-url](https://dashboard.heroku.com/apps/secure-coast-66106)
-[hosted-url]()
+
 
